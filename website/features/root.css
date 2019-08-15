@@ -1,0 +1,12 @@
+:root {
+    --black : #040404;
+    --dark : #070719;
+    --blue: #146ef4;
+    --dark-blue: #0056b3;
+    --light-blue: #1485fd;
+    --grey-blue: #7289da;
+    --almost-dark : #2c2f33;
+    --grey: #99aab5;
+    --customized : var(--blue);
+    --customized-hover : var(--dark-blue);
+}

@@ -1,0 +1,739 @@
+@font-face {
+    font-family: "philly";
+    src: url("../fonts/PhillySans.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}	 
+
+*, :after, :before {
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body, header, section, main, .wrapper {
+    font-family: 'Lato','Arial','sans-serif';
+}
+
+header h2, h2 span, h4 span, #clouds ul li a, .merch a, .booking-area span{
+    font-family: 'philly','Lato', 'Arial', sans-serif;
+}
+
+@media screen and (max-width: 579.5px) {
+    h1 {
+        letter-spacing: 0.5rem;
+        font-size: 1.5rem;
+    }
+}
+
+h2, h3, h4 {
+    font-family: 'Lato', 'Arial', sans-serif;
+    display: inline-block;
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+h2, h3, h4 {
+    margin-top: 5rem;
+}
+
+h2, h3, .merch {
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--light-blue);
+}
+
+ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+ul li {
+    list-style: none;
+}
+
+nav {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto 1rem;
+}
+
+nav li {
+    padding: 1rem 0.5rem;
+    cursor: pointer;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-color: var(--dark);
+    text-align: center;
+    z-index: 5;
+}
+
+header h2 {
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.top-panel-to-fix {
+    position: static;
+    width: 100%;
+    height: 149px;
+    background-color: var(--dark);
+    display: flex;
+    flex-direction: column;
+}
+
+.top-panel-to-fix.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 15;
+}
+
+.top-panel-to-fix.sticky h1 {
+    margin-top: 2rem;
+}
+/* more margin top to keep the scroll smooth when top panel get sticky  */ 
+.more-margin-top {
+    margin-top: 149px;
+}
+
+#main-portrait img {
+    max-height: 285px;
+}
+
+#booking img {
+    max-height: 300px;
+}
+
+#booking .wrapper {
+    width: 100%;
+    position: relative;
+}
+
+#booking .mentions {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: rgba(255,255,255,0.15);
+}
+
+/* separator */
+h2:after, .social p:after {
+    width: 100px;
+    border-bottom : 1px solid var(--customized);
+    content: ' ';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+header h2:after {
+    width: 0;
+    border-bottom: none;
+}
+
+#bio .wrapper {
+    margin-top: 4rem;
+}
+
+#clouds ul {
+    flex-direction: column;
+}
+
+#clouds ul li {
+    width: 180px;
+    margin-top: 1rem;
+}
+
+#clouds ul li a {
+    font-size: 2rem;
+}
+
+#clouds ul li a:hover {
+    color: var(--blue) !important;
+}
+
+#clouds p {
+    margin: 1rem auto 0;
+}
+
+#calendar {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* gig box */
+
+.coreygig {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.monthseparator{
+    margin-bottom: 0;
+}
+.coreygig:first-of-type {
+    margin-bottom: 0;
+}
+
+.gig-date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 9rem;
+    height: 8rem;
+    padding: 0.3rem;
+    color: var(--grey);
+    text-align: center;
+    background: #333;
+}
+.gig-day {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+}
+.gig-number {
+    font-size: 3.5rem;
+    letter-spacing: -1.8px;
+    line-height: 3.5rem;
+    padding: 5px 0 0 0;
+}
+.gig-location {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    height: 8rem;
+    padding: 0.5rem;
+    background: #d3d3d3;
+    color: #333333;
+    text-align: left;
+}
+.gig-name {
+    color: var(--blue);
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+
+.place {
+    font-size: 1.2rem;
+    margin-left: 0.25rem;
+    margin-right: 0.15rem;
+}
+
+.state, .country {
+    font-size: 0.9rem;
+}
+.records {
+    font-size: 1rem;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.showtime {
+    padding-top: 0.5rem;
+    font-size: 1rem;
+}
+
+.showtime small {
+    padding-left: 0.5rem ;
+}
+
+.gig-month {
+    text-align: left;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.json-error {
+    line-height: 4rem;
+}
+
+/* social, .social networks */
+#social, #merch {
+    margin-bottom: 2rem;
+}
+
+.social {
+    text-align: center;
+}
+
+.merch {
+    text-align: center;
+    padding-top: 3rem;
+    margin-bottom: 400px;
+}
+
+.merch a {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    background-color: var(--customized);
+    border: 1px solid var(--customized);
+    color: white;
+    font-size: 1.7rem;
+}
+
+#merch:hover {
+    background-color: var(--blue) !important;
+}
+
+.social a {
+    /* padding: 1rem 1.5rem; */
+    padding: 1rem 0.75rem;
+}
+
+.social p {
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.social svg {
+    width: 50px;
+    height: 50px;
+}
+
+.social a:hover svg path {
+    fill: var(--customized-hover);
+}
+
+.direct-message {
+    margin-top: 2rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: white;
+}
+
+.direct-message p {
+    margin: 0;
+}
+.direct-message p:after {
+    width: 0;
+    border-bottom : 0;
+}
+.direct-message a {
+    padding: 0;
+    color: white;
+    line-height: 1.85rem;
+}
+.direct-message .white {
+    color: white;
+    margin-right: 0.25rem;
+}
+.direct-message .break{
+    display: block;
+    margin-top: 1rem;
+}
+
+.direct-message .button {
+    border: 1px solid var(--customized);
+    margin-left: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+}
+.direct-message .button:hover,
+.direct-message .button:focus {
+    background-color: var(--customized);
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.booking-area {
+    display: block;
+    text-align: center;
+    margin-bottom: 3.25rem;
+    width: 100%;
+    text-align: center
+}
+
+.booking-area a {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    background-color: var(--customized);
+    color: white;
+    border: 1px solid var(--customized);
+    font-size: 1.3rem;
+}
+
+.booking-area a:hover {
+    background-color: var(--blue) !important;
+}
+
+.booking-area span {
+    margin-right: 0.4rem;
+    font-size: 1.7rem;
+}
+.mentions {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+} 
+
+.conditions:hover,
+.conditions:focus
+{
+    position: relative;
+}
+.conditions:hover:before,
+.conditions:focus:before {
+    
+    position: absolute;
+    top: -50px;
+    left: -90px;
+    content: "We don't use either your email or your private datas so...your datas are completly safe with us.";
+    width: 213px;
+    height: 66px;
+    background-color: #aaa;
+    color: black;
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 579.8px) {
+    
+    .wrapper {
+        max-width: 360px;
+    }
+    
+    h2 span, h4 span {
+        display: block;
+    }
+    
+    h2 span, h4 span {
+        font-size: 2rem;
+    }
+    
+    .merch {
+        margin-bottom: 420px;
+    }
+    
+    .gig-location {
+        line-height: 1;
+    }
+    
+}
+
+@media screen and (max-width: 325px) {
+    .gig-location {
+        line-height: 1;
+    }
+    
+    .gig-location * {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 580px) {
+    
+    .wrapper {
+        max-width: 760px;
+    }
+    .calendar .wrapper {
+        max-width: 700px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+        letter-spacing: 0.6rem;
+    }
+    
+    .top-panel-to-fix.sticky h1 {
+        margin-top: auto;
+    }
+    
+    h2, h3, h4 {
+        font-size: 2rem;
+    }
+    
+    h2 span, h4 span {
+        font-size: 3rem;
+    }
+    
+    .gig-name {
+        font-size: 1.5rem;
+    }
+    .records {
+        font-size: 1.1rem;
+    }
+    
+}
+
+@media screen and (min-width: 700px) {
+    h2, h3, h4 {
+        font-size: 2.5rem;
+    }
+    
+    h2, h3, h4 {
+        margin-top: 5rem;
+    }
+    
+    h2, h3 {
+        padding-bottom: 2rem;
+        margin-bottom: 3rem;
+    }
+    
+    h2:after, .social p:after {
+        width: 100px;
+    }
+    .wrapper {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    nav li {
+        padding: 1rem 1.5rem;
+    }
+    
+    #clouds iframe {
+        width: 700px;
+        margin-bottom: 1rem;
+    }
+
+    #clouds ul { 
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto 2rem;
+    }
+
+    #calendar {
+        margin-bottom: 0;
+    }
+    #calendar span {
+        padding-left: 0.4rem;
+    }
+    
+    .gig {
+        width: 700px;
+    }
+    
+    .gig>.dateDark {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .gig .day {
+        font-size: 14px;
+        padding: 16px 0 0 0;
+        line-height: 14px;
+    }
+    .gig .number {
+        font-size: 50px;
+        letter-spacing: -1.8px;
+        line-height: 56px;
+        padding: 5px 0 3px 0;
+    }
+    .gig>.text {
+        font-size: 22px;
+        width: 600px;
+        height: 100px;
+        padding: 10px;
+    }
+    .gig>.text>.records {
+        font-size: 16px;
+    }
+    
+    .gig>.text>.desc {
+        padding-top: 2px;
+        font-size: 12px;
+    }
+    
+    .gig-location {
+        padding: 0.5rem 0.5rem 0.5rem 1rem;
+    }
+    
+    #social, #merch {
+        margin-bottom: 2rem;
+    }
+    
+    #social span {
+        padding-right: 0.4rem;
+    }
+    
+    .merch {
+        margin-bottom: 450px;
+    }
+    
+    .social a {
+        padding: 1rem 1.5rem;
+    }
+    
+    .social p {
+        padding-bottom: 2rem;
+        margin-bottom: 3rem;
+    }
+    
+    .direct-message p {
+        margin: 0;
+    }
+    .booking-area {
+        margin-bottom: 4rem;
+    }
+    
+    .booking-area a {
+        padding: 1rem 1.5rem;
+    }    
+}
+
+@media screen and (min-width: 1030px) {      
+    h2, h3, h4 {
+        font-size: 2.5rem;
+    }
+    
+    h2, h3, h4 {
+        margin-top: 5rem;
+    }
+    
+    h2, h3 {
+        padding-bottom: 2rem;
+        margin-bottom: 3rem;
+    }
+    
+    h2:after, .social p:after {
+        width: 100px;
+    }
+    
+    header {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    header h2 {
+        font-size: 7rem;
+        margin-bottom: 1rem;
+    }
+    
+    #main-portrait img {
+        max-height: 400px;
+    }
+    
+    #booking img {
+        max-height: 350px;
+    }
+    
+    #bio .wrapper {
+        margin-top: 5rem;
+    }
+    
+    .wrapper {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+    nav li {
+        padding: 1rem 1.5rem;
+    }
+    
+    #clouds ul {
+        margin-bottom: 2rem;
+    }
+
+    .gig {
+        width: 700px;
+    }
+    
+    .gig>.dateDark {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .gig .day {
+        font-size: 14px;
+        padding: 16px 0 0 0;
+        line-height: 14px;
+    }
+    .gig .number {
+        font-size: 50px;
+        letter-spacing: -1.8px;
+        line-height: 56px;
+        padding: 5px 0 3px 0;
+    }
+    .gig>.text {
+        font-size: 22px;
+        width: 600px;
+        height: 100px;
+        padding: 10px;
+    }
+    .gig>.text>.records {
+        font-size: 16px;
+    }
+    
+    .gig>.text>.desc {
+        padding-top: 2px;
+        font-size: 12px;
+    }
+    
+    #social, #merch {
+        margin-bottom: 2rem;
+    }
+    
+    .merch {
+        margin-bottom: 500px;
+    }
+    
+    .social a {
+        padding: 1rem 1.5rem;
+    }
+    
+    .social p {
+        padding-bottom: 2rem;
+        margin-bottom: 3rem;
+    }
+    
+    .merch a {
+        width: 350px;
+        font-size: 2rem;
+    }
+
+    .booking-area a {
+        width: 350px;
+        padding: 1rem 1.5rem;
+        font-size: 1.5rem;
+    }
+    
+    .booking-area span {
+        font-size: 2rem;
+    }
+}
