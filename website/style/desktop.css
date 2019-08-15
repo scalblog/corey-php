@@ -1,12 +1,5 @@
-@font-face {
-    font-family: "philly";
-    src: url("../fonts/PhillySans.otf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}	 
-
 header h2, h2 span, h4 span, #clouds ul li a, .merch a, .booking-area span{
-    font-family: 'philly','Lato', 'Arial', sans-serif;
+    font-family: 'philly_sansregular','Lato', 'Arial', sans-serif;
 }
 
 header h2, a {    

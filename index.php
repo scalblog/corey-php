@@ -28,6 +28,7 @@
         text-align: center;
     }
     </style>
+    <link href="./website/fonts/philly-webfont.css" rel="stylesheet">
     <link href="./website/style/mobile.css" rel="stylesheet">
     <link href="./website/style/tablet.css" rel="stylesheet" media="(min-width: 700px)">
     <link href="./website/style/desktop.css" rel="stylesheet" media="(min-width: 1030px)">
